@@ -3,6 +3,7 @@
 echo '🚗️正在初始化...'
 git checkout --orphan temp
 git branch -D master
+git checkout -b temp
 git add .
 git commit -m "init commit"
 echo '🚀完成初始化提交'
