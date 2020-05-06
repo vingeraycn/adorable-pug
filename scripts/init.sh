@@ -1,8 +1,9 @@
 #!/bin/bash
 
 echo '☝️正在初始化...'
-git checkout -b temp
-git checkout --orphan master
+git checkout --orphan temp
+git branch -D master
+git branch -m temp master
 echo '重建 master 分支'
 git branch -D temp
 echo '🔨正在安装依赖...'
