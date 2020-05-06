@@ -13,7 +13,7 @@
     "dev-css": "yarn build-css --watch",
     "dev-js": "yarn build-js --watch",
     "build-html": "pug src/ --out dist/ --pretty",
-    "build-css": "stylus src/ --out dist/",
+    "build-css": "node scripts/build-styl.js",
     "build-js": "babel src/ --out-dir dist/"
   },
   "author": "leihancn",
