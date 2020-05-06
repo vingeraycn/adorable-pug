@@ -1,8 +1,11 @@
 #!/bin/bash
 
-echo '☝️正在初始化...'
+echo '🚗️正在初始化...'
 git checkout --orphan temp
 git branch -D master
+git add .
+git commit -m "init commit"
+echo '🚀完成初始化提交'
 git branch -m temp master
 echo '重建 master 分支'
 git branch -D temp
@@ -13,9 +16,6 @@ git remote remove origin
 git remote add origin $originUrl
 echo '远端地址切换到: '
 git remote -v
-git add .
-git commit -m "init commit"
-echo '🚀完成初始化提交'
 
 rm -rf ../scripts/init.sh
 
