@@ -22,7 +22,7 @@ var isDev = process.env.NODE_ENV === 'development';
 var isProd = process.env.NODE_ENV === 'production'
 
 readFile('src', function(dir) {
-  var ls = exec(`stylus ${isDev ? '-w' : ''} ${dir.replace('styl', './styl')} -o ${dir.replace('src', 'dist').replace('styl', './css')}`, (err, stdout, stderr) => {
+  var ls = exec(`stylus ${isDev ? '-w' : ''} ${dir.replace('.styl', './styl')} -o ${dir.replace('src', 'dist').replace('.styl', './css')}`, (err, stdout, stderr) => {
     if (err) {
       console.log(`error: ${err}`);
     }

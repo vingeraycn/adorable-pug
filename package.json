@@ -12,7 +12,7 @@
     "dev-html": "yarn build-html --watch",
     "dev-css": "NODE_ENV=development yarn build-css --watch",
     "dev-js": "yarn build-js --watch",
-    "build-html": "pug src/ --out dist/ --pretty",
+    "build-html": "pug src/pages/ --out dist/ --pretty",
     "build-css": "node scripts/build-styl.js",
     "build-js": "babel src/ --out-dir dist/"
   },
