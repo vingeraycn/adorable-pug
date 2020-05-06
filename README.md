@@ -32,3 +32,6 @@ yarn build
 
 ## Roadmap
 - [ ] 推出适用于移动端的模板
+
+## 感谢
+- [Sleaf](https://github.com/Sleaf)
