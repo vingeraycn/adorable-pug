@@ -9,7 +9,6 @@ git commit -m "init commit"
 echo '🚀完成初始化提交'
 git branch -m temp master
 echo '重建 master 分支'
-git branch -D temp
 echo '🔨正在安装依赖...'
 yarn
 read -p '请输入 git 仓库地址: ' originUrl
