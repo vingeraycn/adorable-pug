@@ -1,6 +1,9 @@
 # adorable-pug
 优雅的静态页面模板
 
+## 使用之前
+- 项目使用了 [node.js](https://nodejs.org/zh-cn/) 服务，请先提前安装 [node.js](https://nodejs.org/zh-cn/)
+
 ## 开始使用
 ```bash 
 # clone 模板
