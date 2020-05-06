@@ -10,7 +10,7 @@
     "pre": "rm -rf dist/ && yarn cp-assets",
     "cp-assets": "mkdirp dist/ && cp -frp src/assets dist/",
     "dev-html": "yarn build-html --watch",
-    "dev-css": "yarn build-css --watch",
+    "dev-css": "NODE_ENV=development yarn build-css --watch",
     "dev-js": "yarn build-js --watch",
     "build-html": "pug src/ --out dist/ --pretty",
     "build-css": "node scripts/build-styl.js",
