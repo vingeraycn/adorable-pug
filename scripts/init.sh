@@ -1,8 +1,10 @@
 #!/bin/bash
 
 echo '☝️正在初始化...'
+git checkout -b temp
 git checkout --orphan master
 echo '重建 master 分支'
+git branch -D temp
 echo '🔨正在安装依赖...'
 yarn
 read -p '请输入 git 仓库地址: ' originUrl
