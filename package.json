@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "yarn format && git add . && git cz",
     "format": "yarn prettier --write \"**/*.pug\"",
-    "dev": "yarn pre && run-p dev-*",
+    "dev": "yarn pre && run-p dev-* watch",
     "build": "yarn pre && run-p build-*",
     "pre": "rm -rf dist/ && yarn cp-assets",
     "cp-assets": "mkdirp dist/ && cp -frp src/assets dist/",
@@ -16,7 +16,8 @@
     "dev-js": "yarn build-js --watch",
     "build-html": "pug src/pages/ --out dist/ --pretty",
     "build-css": "node scripts/build-styl.js",
-    "build-js": "babel src/ --out-dir dist/"
+    "build-js": "babel src/ --out-dir dist/",
+    "watch": "livereload dist/"
   },
   "author": "leihancn",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@prettier/plugin-pug": "^1.2.0",
+    "livereload": "^0.9.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "pug-cli": "^1.0.0-alpha6",

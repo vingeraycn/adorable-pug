@@ -33,7 +33,7 @@ yarn build
 
 ## Roadmap
 - [ ] 推出适用于移动端的模板
-- [ ] 支持热更新
+- [x] 支持热更新
 - [x] 支持 prettier
 
 ## 感谢
