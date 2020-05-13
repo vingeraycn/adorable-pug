@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "yarn format && git add . && git cz",
+    "format": "yarn prettier --write \"**/*.pug\"",
     "dev": "yarn pre && run-p dev-*",
     "build": "yarn pre && run-p build-*",
     "pre": "rm -rf dist/ && yarn cp-assets",
