@@ -1,5 +1,6 @@
 # adorable-pug
-优雅的静态页面模板
+优雅的静态页面模板。
+> 写非SPA的简单静态页面必备
 
 ## 使用之前
 - 项目使用了 [node.js](https://nodejs.org/zh-cn/) 服务，请先提前安装 [node.js](https://nodejs.org/zh-cn/)
