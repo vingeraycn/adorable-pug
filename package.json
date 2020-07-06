@@ -17,15 +17,16 @@
     "build-html": "pug src/pages/ --out dist/ --pretty",
     "build-css": "node scripts/build-styl.js",
     "build-js": "babel src/ --out-dir dist/",
-    "watch": "livereload dist/"
+    "watch": "livereload dist/",
+    "upgrade-dependencies": "npx npm-check-updates -u && yarn"
   },
   "author": "leihancn",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@prettier/plugin-pug": "^1.2.0",
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@prettier/plugin-pug": "^1.4.4",
     "livereload": "^0.9.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
